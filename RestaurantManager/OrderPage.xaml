@@ -22,7 +22,15 @@
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="1" Grid.Column="1" Text="Special requests:" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <TextBlock Grid.Row="1" Grid.Column="2" Text="Order items:" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <TextBlock Text="** Add to order **" Grid.Row="5"  Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Padding="30"/>
-        <TextBlock Text="** Submit order **" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Padding="30"/>
+        <Button x:Name="AddButton" Content="Add to order" Grid.Row="5"  Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10"/>
+        <Button x:Name="SubmitOrder" Content="Submit order" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Margin="10" />
+        <ListView Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Background="#FF6657F4" Margin="10"></ListView>
+        <ListView Grid.Column="0" Grid.Row="1" Grid.RowSpan="3" Background="#FF4DEA49" Margin="10"></ListView>
+        
+        <AppBar Grid.ColumnSpan="3" >
+            <AppBarButton Icon="Home" Label="Home" x:Name="HomeAppButton" Click="HomeAppButton_Click" ToolTipService.ToolTip="Go back to Home" />
+        </AppBar>
+
     </Grid>
+
 </Page>
